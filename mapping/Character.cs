@@ -17,7 +17,7 @@
 
         public static void ValidateName(string name)
         {
-            if (name.Any(character => !char.IsLetter(character) && character != ' ') || name.Length < 2)
+            if (name.Any(character => !char.IsLetter(character) && character != ' ') || name.Length < 2 || name.Length > 100)
             {
                 throw new Exception("Nome inválido.");
             }

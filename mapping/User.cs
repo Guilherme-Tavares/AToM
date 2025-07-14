@@ -10,7 +10,7 @@
                 return _name;
             } set
             {
-                if (string.IsNullOrEmpty(value) || value.Length < 2)
+                if (string.IsNullOrEmpty(value) || value.Length < 2 || value.Length > 100)
                 {
                     throw new Exception("Nome inválido.");
                 }
@@ -37,14 +37,14 @@
         }
         public static void ValidateFirstName(string name)
         {
-            if (name.Any(character => !char.IsLetter(character)) || name.Length < 2)
+            if (name.Any(character => !char.IsLetter(character)) || name.Length < 2 || name.Length > 50)
             {
                 throw new Exception("Nome inválido.");
             }
         }
         public static void ValidateLastName(string name)
         {
-            if (name.Any(character => !char.IsLetter(character) && character != ' ') || name.Length < 2)
+            if (name.Any(character => !char.IsLetter(character) && character != ' ') || name.Length < 2 || name.Length > 50)
             {
                 throw new Exception("Nome inválido.");
             }
