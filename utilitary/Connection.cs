@@ -14,7 +14,6 @@ namespace RPGame.utilitary
 
                 connection = new MySqlConnection(connectionString);
                 connection.Open();
-                // Console.WriteLine("Connected.");
                 return connection;
             }
             catch (Exception ex)

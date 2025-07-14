@@ -1,37 +1,53 @@
-use rpg_game;
+USE rpg_game;
 
--- SELECT, UPDATE, DELETE, INSERT
+-- 1. INNER JOIN: Itens presentes em inventários com os nomes dos personagens e as quantidades
+SELECT p.nome AS 'Personagem', i.nome AS 'Item', ii.quantidade AS 'Quantidade'
+FROM item_inventario ii
+INNER JOIN inventario inv ON ii.fk_id_inventario = inv.id_inventario
+INNER JOIN personagem p ON inv.fk_id_personagem = p.id_personagem
+INNER JOIN item i ON ii.fk_id_item = i.id_item;
 
-SELECT * FROM chefe_personagem;
+-- 2. LEFT JOIN: Exibe todas as localidades com os NPCs associados, retornando NULL se não houver NPC
+SELECT l.nome AS 'Área', n.nome AS 'NPC'
+FROM localidade l
+LEFT JOIN npc n ON l.id_localidade = n.fk_id_localidade;
 
-DELETE FROM chefe WHERE id_chefe > 3;
+-- 3. RIGHT JOIN: Mostra os chefes e os personagens que os enfrentaram, retornando NULL se o chefe ainda não tiver sido enfrentado
+SELECT c.nome AS 'Chefe', p.nome AS 'Personagem', cp.status_chefe AS 'Status'
+FROM chefe c
+RIGHT JOIN chefe_personagem cp ON c.id_chefe = cp.fk_id_chefe
+RIGHT JOIN personagem p ON cp.fk_id_personagem = p.id_personagem;
 
-SELECT personagem.nome AS 'Personagem', chefe.nome AS 'Chefe', chefe_personagem.status_chefe AS 'Status' FROM chefe_personagem
-INNER JOIN personagem ON chefe_personagem.fk_id_personagem = personagem.id_personagem
-INNER JOIN chefe ON chefe_personagem.fk_id_chefe = chefe.id_chefe
-WHERE chefe_personagem.status_chefe = 'Derrotado';
+-- 4. SUBCONSULTA: Nomes dos personagens que possuem mais de 3 itens somados em seus inventários
+SELECT nome AS 'Personagem'
+FROM personagem
+WHERE id_personagem IN (
+    SELECT inv.fk_id_personagem
+    FROM item_inventario ii
+    JOIN inventario inv ON ii.fk_id_inventario = inv.id_inventario
+    GROUP BY inv.fk_id_personagem
+    HAVING SUM(ii.quantidade) > 3
+);
 
-SELECT COUNT(fk_id_inventario) AS Jogadores FROM item_inventario
-WHERE fk_id_item = 2;
+-- 5. SUBCONSULTA: Nome e localidade dos personagens com a maior quantidade de dinheiro
+SELECT p.nome AS 'Personagem', p.dinheiro AS 'Dinheiro', l.nome AS 'Área'
+FROM personagem p
+JOIN localidade l ON p.fk_id_localidade = l.id_localidade
+WHERE p.dinheiro = (
+    SELECT MAX(dinheiro)
+    FROM personagem
+);
 
-SELECT inventario.fk_id_personagem AS 'ID', personagem.nome AS 'Personagem', item.nome AS 'Item', item_inventario.quantidade AS 'Quantidade' FROM item_inventario
-INNER JOIN inventario ON item_inventario.fk_id_inventario = inventario.id_inventario
-INNER JOIN personagem ON inventario.fk_id_personagem = personagem.id_personagem
-INNER JOIN item ON item_inventario.fk_id_item = item.id_item
-WHERE id_item = 2;
+-- 6. GROUP BY: Conta quantas missões cada personagem aceitou ou concluiu
+SELECT p.nome AS 'Personagem', COUNT(mp.id_missao_personagem) AS 'Missões'
+FROM missao_personagem mp
+JOIN personagem p ON mp.fk_id_personagem = p.id_personagem
+GROUP BY p.nome;
 
-SELECT MIN(nivel) FROM personagem;
-
-SELECT * FROM usuario WHERE licenca = "788456892134568";
-
-SELECT * FROM usuario;
-ALTER TABLE usuario MODIFY licenca VARCHAR(15) NOT NULL UNIQUE;
-UPDATE usuario SET nome = "Guilherme de Nóbrega" WHERE usuario.licenca = "456984562312547";
-DELETE usuario.* FROM usuario WHERE usuario.licenca = "456984562312547";
-
-alter table personagem add genero char(1) not null default 'm';
-alter table personagem modify genero char(1) not null;
-
-alter table personagem modify fk_id_local INT NOT NULL DEFAULT 1;
-
-SELECT * FROM personagem;
+-- 7. GROUP BY com HAVING: Lista localidades com mais de 1 item disponível
+SELECT l.nome AS 'Área', COUNT(il.id_item_localidade) AS 'Itens'
+FROM item_localidade il
+JOIN localidade l ON il.fk_id_localidade = l.id_localidade
+WHERE il.disponivel = TRUE
+GROUP BY l.nome
+HAVING COUNT(il.id_item_localidade) > 1;

@@ -70,7 +70,8 @@ namespace RPGame
                 }
             } while (validLicense == false);
 
-            bool isLicenseAvailable = UserDAO.VerifyLicense(license);
+            UserDAO userDAO = new UserDAO();
+            bool isLicenseAvailable = userDAO.VerifyLicense(license);
 
             switch (isLicenseAvailable)
             {
@@ -165,7 +166,8 @@ namespace RPGame
                 {
                     case "1":
                         {
-                            UserDAO.Create(user);
+                            UserDAO userDAO = new UserDAO();
+                            userDAO.Create(user);
                             FirstQueriedUserScreen(license);
 
                             break;
@@ -188,7 +190,8 @@ namespace RPGame
         }
         static void FirstQueriedUserScreen(string license)
         {
-            User user = UserDAO.GetByLicense(license);
+            UserDAO userDAO = new UserDAO();
+            User user = userDAO.GetByLicense(license);
 
             string userAction;
             bool invalidOption;
@@ -231,8 +234,10 @@ namespace RPGame
         }
         static void QueriedUserScreen(string license)
         {
-            User user = UserDAO.GetByLicense(license);
-            List<Character> characters = CharacterDAO.GetByUser(user);
+            UserDAO userDAO = new UserDAO();
+            User user = userDAO.GetByLicense(license);
+            CharacterDAO characterDAO = new CharacterDAO();
+            List<Character> characters = characterDAO.GetByUser(user);
 
             string userAction;
             bool invalidOption;
@@ -431,7 +436,8 @@ namespace RPGame
                 {
                     case "1":
                         {
-                            UserDAO.UpdateName(user);
+                            UserDAO userDAO = new UserDAO();
+                            userDAO.UpdateName(user);
                             UserEditNameSuccess();
                             UserOptionsMenu(user);
 
@@ -478,7 +484,8 @@ namespace RPGame
                 {
                     case "1":
                         {
-                            UserDAO.DeleteByLicense(user._license);
+                            UserDAO userDAO = new UserDAO();
+                            userDAO.DeleteByLicense(user._license);
                             UserRemoveLicenseSuccess();
                             TitleScreen();
                             break;
@@ -550,7 +557,8 @@ namespace RPGame
                 {
                     case "1":
                         {
-                            CharacterDAO.Create(character, user);
+                            CharacterDAO characterDAO = new CharacterDAO();
+                            characterDAO.Create(character, user);
                             UnderConstruction();
                             QueriedUserScreen(user._license);
                             break;
@@ -775,7 +783,8 @@ namespace RPGame
         }
         static void LoadGameScreen(User user)
         {
-            List<Character> characters = CharacterDAO.GetByUser(user);
+            CharacterDAO characterDAO = new CharacterDAO();
+            List<Character> characters = characterDAO.GetByUser(user);
 
             if (characters.Count == 0)
             {
@@ -901,7 +910,8 @@ namespace RPGame
                 {
                     case "1":
                         {
-                            CharacterDAO.DeleteById(character._id);
+                            CharacterDAO characterDAO = new CharacterDAO();
+                            characterDAO.DeleteById(character._id);
                             CharacterDeleteSuccess();
                             LoadGameScreen(character._user);
                             break;
@@ -947,5 +957,3 @@ namespace RPGame
         }
     }
 }
-
-

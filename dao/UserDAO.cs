@@ -1,12 +1,13 @@
 ﻿using MySql.Data.MySqlClient;
 using RPGame.mapping;
 using RPGame.utilitary;
+using RPGame.Interface;
 
 namespace RPGame.dao
 {
-    internal class UserDAO
+    internal class UserDAO : IuserDAO<User>
     {
-        public static void Create(User user)
+        public void Create(User user)
         {
             try
             {
@@ -28,19 +29,7 @@ namespace RPGame.dao
                 Connection.CloseConnection();
             }
         }
-        public void Read(User user)
-        {
-
-        }
-        public void Update(User user)
-        {
-
-        }
-        public void Delete(User user)
-        {
-
-        }
-        public static List<User> GetAll()
+        public List<User> GetAll()
         {
             try
             {
@@ -71,7 +60,7 @@ namespace RPGame.dao
                 Connection.CloseConnection();
             }  
         }
-        public static int GetIdByLicense(string license)
+        public int GetIdByLicense(string license)
         {
             try
             {
@@ -99,11 +88,12 @@ namespace RPGame.dao
                 Connection.CloseConnection();
             }
         }
-        public static bool VerifyLicense(string license)
+        public bool VerifyLicense(string license)
         {
             try
             {
-                List<User> users = UserDAO.GetAll();
+                UserDAO userDAO = new UserDAO();
+                List<User> users = userDAO.GetAll();
                 bool isAvailable = true;
 
                 foreach (User user in users)
@@ -123,7 +113,7 @@ namespace RPGame.dao
                 Connection.CloseConnection();
             }
         }
-        public static User GetByLicense(string license)
+        public User GetByLicense(string license)
         {
             try
             {
@@ -158,7 +148,7 @@ namespace RPGame.dao
                 Connection.CloseConnection();
             }
         }
-        public static void UpdateName(User user)
+        public void UpdateName(User user)
         {
             try
             {
@@ -179,7 +169,7 @@ namespace RPGame.dao
                 Connection.CloseConnection();
             }
         }
-        public static void DeleteByLicense(string license)
+        public void DeleteByLicense(string license)
         {
             try
             {

@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Guilherme\\Documents\\IFRO Curso\\2025.1\\Programa\u00E7\u00E3o Orientada a Objetos\\TrabalhoInterdisciplinar\\RPGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|c:\\users\\guilherme\\documents\\ifro curso\\2025.1\\programa\u00E7\u00E3o orientada a objetos\\trabalhointerdisciplinar\\rpgame\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|c:\\users\\guilherme\\documents\\ifro curso\\2025.1\\programa\u00E7\u00E3o orientada a objetos\\trabalhointerdisciplinar\\rpgame\\mapping\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|solutionrelative:mapping\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|c:\\users\\guilherme\\documents\\ifro curso\\2025.1\\programa\u00E7\u00E3o orientada a objetos\\trabalhointerdisciplinar\\rpgame\\interface\\icharacterdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|solutionrelative:interface\\icharacterdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|c:\\users\\guilherme\\documents\\ifro curso\\2025.1\\programa\u00E7\u00E3o orientada a objetos\\trabalhointerdisciplinar\\rpgame\\dao\\characterdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|solutionrelative:dao\\characterdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|c:\\users\\guilherme\\documents\\ifro curso\\2025.1\\programa\u00E7\u00E3o orientada a objetos\\trabalhointerdisciplinar\\rpgame\\interface\\iuserdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|solutionrelative:interface\\iuserdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|c:\\users\\guilherme\\documents\\ifro curso\\2025.1\\programa\u00E7\u00E3o orientada a objetos\\trabalhointerdisciplinar\\rpgame\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|solutionrelative:dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|c:\\users\\guilherme\\documents\\ifro curso\\2025.1\\programa\u00E7\u00E3o orientada a objetos\\trabalhointerdisciplinar\\rpgame\\mapping\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|solutionrelative:mapping\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|c:\\users\\guilherme\\documents\\ifro curso\\2025.1\\programa\u00E7\u00E3o orientada a objetos\\trabalhointerdisciplinar\\rpgame\\mapping\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|solutionrelative:mapping\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|c:\\users\\guilherme\\documents\\ifro curso\\2025.1\\programa\u00E7\u00E3o orientada a objetos\\trabalhointerdisciplinar\\rpgame\\utilitary\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|solutionrelative:utilitary\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|c:\\users\\guilherme\\documents\\ifro curso\\2025.1\\programa\u00E7\u00E3o orientada a objetos\\trabalhointerdisciplinar\\rpgame\\dao\\characterdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|solutionrelative:dao\\characterdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|c:\\users\\guilherme\\documents\\ifro curso\\2025.1\\programa\u00E7\u00E3o orientada a objetos\\trabalhointerdisciplinar\\rpgame\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|c:\\users\\guilherme\\documents\\ifro curso\\2025.1\\programa\u00E7\u00E3o orientada a objetos\\trabalhointerdisciplinar\\rpgame\\mapping\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76E72B8F-663C-4413-9F80-35CBD3D5CE23}|RPGame.csproj|solutionrelative:mapping\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 330,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,76 +50,100 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\IFRO Curso\\2025.1\\Programa\u00E7\u00E3o Orientada a Objetos\\TrabalhoInterdisciplinar\\RPGame\\mapping\\User.cs",
               "RelativeDocumentMoniker": "mapping\\User.cs",
               "ToolTip": "C:\\Users\\Guilherme\\Documents\\IFRO Curso\\2025.1\\Programa\u00E7\u00E3o Orientada a Objetos\\TrabalhoInterdisciplinar\\RPGame\\mapping\\User.cs",
               "RelativeToolTip": "mapping\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-30T07:53:21.219Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Character.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\IFRO Curso\\2025.1\\Programa\u00E7\u00E3o Orientada a Objetos\\TrabalhoInterdisciplinar\\RPGame\\mapping\\Character.cs",
               "RelativeDocumentMoniker": "mapping\\Character.cs",
               "ToolTip": "C:\\Users\\Guilherme\\Documents\\IFRO Curso\\2025.1\\Programa\u00E7\u00E3o Orientada a Objetos\\TrabalhoInterdisciplinar\\RPGame\\mapping\\Character.cs",
               "RelativeToolTip": "mapping\\Character.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T20:11:05.146Z"
+              "WhenOpened": "2025-07-12T20:11:05.146Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\IFRO Curso\\2025.1\\Programa\u00E7\u00E3o Orientada a Objetos\\TrabalhoInterdisciplinar\\RPGame\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Guilherme\\Documents\\IFRO Curso\\2025.1\\Programa\u00E7\u00E3o Orientada a Objetos\\TrabalhoInterdisciplinar\\RPGame\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAL8DAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T06:26:07.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-30T06:26:07.085Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Connection.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\IFRO Curso\\2025.1\\Programa\u00E7\u00E3o Orientada a Objetos\\TrabalhoInterdisciplinar\\RPGame\\utilitary\\Connection.cs",
               "RelativeDocumentMoniker": "utilitary\\Connection.cs",
               "ToolTip": "C:\\Users\\Guilherme\\Documents\\IFRO Curso\\2025.1\\Programa\u00E7\u00E3o Orientada a Objetos\\TrabalhoInterdisciplinar\\RPGame\\utilitary\\Connection.cs",
               "RelativeToolTip": "utilitary\\Connection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-29T03:57:34.417Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "UserDAO.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\IFRO Curso\\2025.1\\Programa\u00E7\u00E3o Orientada a Objetos\\TrabalhoInterdisciplinar\\RPGame\\dao\\UserDAO.cs",
               "RelativeDocumentMoniker": "dao\\UserDAO.cs",
               "ToolTip": "C:\\Users\\Guilherme\\Documents\\IFRO Curso\\2025.1\\Programa\u00E7\u00E3o Orientada a Objetos\\TrabalhoInterdisciplinar\\RPGame\\dao\\UserDAO.cs",
               "RelativeToolTip": "dao\\UserDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-29T03:54:13.361Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "IuserDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\IFRO Curso\\2025.1\\Programa\u00E7\u00E3o Orientada a Objetos\\TrabalhoInterdisciplinar\\RPGame\\interface\\IuserDAO.cs",
+              "RelativeDocumentMoniker": "interface\\IuserDAO.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\IFRO Curso\\2025.1\\Programa\u00E7\u00E3o Orientada a Objetos\\TrabalhoInterdisciplinar\\RPGame\\interface\\IuserDAO.cs",
+              "RelativeToolTip": "interface\\IuserDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T07:03:25.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CharacterDAO.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\IFRO Curso\\2025.1\\Programa\u00E7\u00E3o Orientada a Objetos\\TrabalhoInterdisciplinar\\RPGame\\dao\\CharacterDAO.cs",
               "RelativeDocumentMoniker": "dao\\CharacterDAO.cs",
               "ToolTip": "C:\\Users\\Guilherme\\Documents\\IFRO Curso\\2025.1\\Programa\u00E7\u00E3o Orientada a Objetos\\TrabalhoInterdisciplinar\\RPGame\\dao\\CharacterDAO.cs",
               "RelativeToolTip": "dao\\CharacterDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-29T03:55:00.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IcharacterDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\IFRO Curso\\2025.1\\Programa\u00E7\u00E3o Orientada a Objetos\\TrabalhoInterdisciplinar\\RPGame\\interface\\IcharacterDAO.cs",
+              "RelativeDocumentMoniker": "interface\\IcharacterDAO.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\IFRO Curso\\2025.1\\Programa\u00E7\u00E3o Orientada a Objetos\\TrabalhoInterdisciplinar\\RPGame\\interface\\IcharacterDAO.cs",
+              "RelativeToolTip": "interface\\IcharacterDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T07:04:06.134Z"
             }
           ]
         }

@@ -1,12 +1,13 @@
 ﻿using MySql.Data.MySqlClient;
 using RPGame.mapping;
 using RPGame.utilitary;
+using RPGame.Interface;
 
 namespace RPGame.dao
 {
-    internal class CharacterDAO
+    internal class CharacterDAO : IcharacterDAO<Character>
     {
-        public static void Create(Character character, User user)
+        public void Create(Character character, User user)
         {
             try
             {
@@ -30,19 +31,7 @@ namespace RPGame.dao
                 Connection.CloseConnection();
             }
         }
-        public void Read(Character character)
-        {
-
-        }
-        public void Update(Character character)
-        {
-
-        }
-        public void Delete(Character character)
-        {
-
-        }
-        public static List<Character> GetByUser(User user)
+        public List<Character> GetByUser(User user)
         {
 
             try
@@ -53,7 +42,8 @@ namespace RPGame.dao
                     "WHERE personagem.fk_id_usuario = @user_id";
                 MySqlCommand command = new MySqlCommand(query, Connection.Connect());
 
-                int userId = UserDAO.GetIdByLicense(user._license);
+                UserDAO userDAO = new UserDAO();
+                int userId = userDAO.GetIdByLicense(user._license);
                 command.Parameters.AddWithValue("@user_id", userId);
 
                 using (MySqlDataReader dataReader = command.ExecuteReader())
@@ -87,7 +77,7 @@ namespace RPGame.dao
                 Connection.CloseConnection();
             }
         }
-        public static void DeleteById(int characterId)
+        public void DeleteById(int characterId)
         {
             try
             {
