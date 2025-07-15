@@ -37,14 +37,14 @@
         }
         public static void ValidateFirstName(string name)
         {
-            if (name.Any(character => !char.IsLetter(character)) || name.Length < 2 || name.Length > 50)
+            if (name.Any(character => !char.IsLetter(character)) || name.Length < 2 || name.Length > 49)
             {
                 throw new Exception("Nome inválido.");
             }
         }
         public static void ValidateLastName(string name)
         {
-            if (name.Any(character => !char.IsLetter(character) && character != ' ') || name.Length < 2 || name.Length > 50)
+            if (name.Any(character => !char.IsLetter(character) && character != ' ') || name.Length < 2 || name.Length > 49)
             {
                 throw new Exception("Nome inválido.");
             }
